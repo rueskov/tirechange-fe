@@ -1,0 +1,67 @@
+/* Date Picker Styling */
+.react-datepicker__header {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+  align-items: center; /* Center align elements */
+  padding-top: 10px; /* Add padding at the top */
+}
+
+.react-datepicker__current-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the current month takes the full width */
+}
+
+.react-datepicker__navigation {
+  top: 0; /* Align the navigation arrows at the top */
+}
+
+.react-datepicker__navigation--previous {
+  left: 10px; /* Move the previous arrow to the left */
+}
+
+.react-datepicker__navigation--next {
+  right: 10px; /* Move the next arrow to the right */
+}
+
+.react-datepicker__day-names {
+  margin-top: 20px; /* Add space above the day names */
+  padding-top: 10px; /* Add padding below the arrows */
+}
+
+.date-picker-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.until-date-picker {
+  margin-right: auto;
+}
+
+.date-picker label {
+  margin-bottom: 5px;
+}
+
+.date-picker input {
+  width: 200px;
+}
+
+
+
+@media (max-width: 600px) {
+  .date-picker input {
+    width: 100%;
+    max-width: 90%;
+    flex: 1;
+  }
+}
